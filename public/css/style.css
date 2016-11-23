@@ -1,0 +1,42 @@
+.container {
+    max-width: 80rem;
+}
+div.container {
+    padding-top: 7.5em;
+}
+.navigation {
+    background: #f4f5f6;
+    border-bottom: .1rem solid #d1d1d1;
+    display: block;
+    height: 5.2rem;
+    left: 0;
+    max-width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navigation .navigation-link, .navigation .navigation-title, .navigation .title {
+    display: inline;
+    font-size: 1.6rem;
+    line-height: 5.2rem;
+    padding: 0;
+    text-decoration: none;  
+}
+.navigation .navigation-title, .navigation .title { 
+    color: #606c76;
+    font-family: Gotham Rounded A,Gotham Rounded B,Helvetica Neue,Arial,sans-serif;
+    position: relative;
+}
+.navigation .navigation-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 5rem;
+}
+.navigation .navigation-list li {
+    float: left;
+    margin-left: 2.5rem;
+    margin-bottom: 0;
+    position: relative;
+}
