@@ -11,8 +11,9 @@ class CvController extends Controller
     public function index()
     {
         $cvs = Cv::all();
+        $statuses = ['Screening', 'Approved', 'Rejected'];
 
-        return view('cvs.index', compact('cvs'));
+        return view('cvs.index', compact('cvs', 'statuses'));
     }
 
     public function create()
