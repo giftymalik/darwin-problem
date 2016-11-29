@@ -29,6 +29,6 @@ class CvController extends Controller
         $cv->cv = $request->cv->store('files');
         $cv->save();
 
-        return \Redirect::to('/cv');
+        return \Redirect::to('/cvs');
     }
 }

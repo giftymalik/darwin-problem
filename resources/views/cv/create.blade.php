@@ -9,7 +9,7 @@
     @endforeach
 </div>
 <div class="form">
-    <form action="/cv" method="POST" enctype="multipart/form-data">
+    <form action="/cvs" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{{csrf_token()}}}">
         <fieldset>
             <label for="firstname">First Name</label>
