@@ -14,8 +14,8 @@
                 <h1 class="title">Screener App</h1>
             </a>
             <ul class="navigation-list float-right">
-                <li><a class="navigation-link" href="/cv/">View</a></li>
-                <li><a class="navigation-link" href="/cv/create">Upload</a></li>
+                <li><a class="navigation-link" href="/cvs/">View</a></li>
+                <li><a class="navigation-link" href="/cvs/create">Upload</a></li>
             </ul>
         </section>
     </nav>
