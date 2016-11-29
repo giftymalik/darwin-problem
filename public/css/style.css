@@ -40,3 +40,6 @@ div.container {
     margin-bottom: 0;
     position: relative;
 }
+.errors {
+    color: #FF3737;
+}

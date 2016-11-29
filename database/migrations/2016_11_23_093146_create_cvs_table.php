@@ -19,7 +19,7 @@ class CreateCvsTable extends Migration
             $table->string('lastname');
             $table->string('mobile', 10)->unique();
             $table->string('cv');
-            $table->tinyInteger('status');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Cv;
 use Illuminate\Http\Request;
+use App\Http\Requests\SaveCv;
 
 class CvController extends Controller
 {
@@ -17,5 +18,17 @@ class CvController extends Controller
     public function create()
     {
         return view('cv.create');
+    }
+
+    public function store(SaveCv $request)
+    {
+        $cv = new Cv;
+        $cv->firstname = $request->firstname;
+        $cv->lastname = $request->lastname;
+        $cv->mobile = $request->mobile;
+        $cv->cv = $request->cv->store('files');
+        $cv->save();
+
+        return \Redirect::to('/cv');
     }
 }
