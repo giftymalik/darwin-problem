@@ -12,12 +12,12 @@ class CvController extends Controller
     {
         $cvs = Cv::all();
 
-        return view('cv.index', compact('cvs'));
+        return view('cvs.index', compact('cvs'));
     }
 
     public function create()
     {
-        return view('cv.create');
+        return view('cvs.create');
     }
 
     public function store(SaveCv $request)
