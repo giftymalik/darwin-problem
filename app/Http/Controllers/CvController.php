@@ -32,4 +32,30 @@ class CvController extends Controller
 
         return \Redirect::to('/cvs');
     }
+
+    public function show($cv_id)
+    {
+        $cv = Cv::find($cv_id);
+
+        return $cv;
+    }
+
+    public function updateStatus(Request $request)
+    {
+        $statuses = [
+            'approve' => 1,
+            'reject'  => 2
+        ];
+
+        $cv = Cv::find($request->cv_id);
+
+        if (! $cv) return 'Invalid Cv item';
+        
+        if (! $statuses[$request->status]) return 'Invalid Status';
+
+        $cv->status = $statuses[$request->status];
+        $cv->save();
+
+        return 'Status Updated';
+    }
 }
